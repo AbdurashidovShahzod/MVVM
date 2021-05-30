@@ -8,7 +8,7 @@ import uz.unzosoft.mvvmcouroutinelivedataretrofit2dagger_hilt.models.TvShowRespo
 interface ApiService {
 
 
-    @GET(Constants.BASE_URL)
+    @GET(Constants.END_POINT)
     suspend fun getTvShows(): Response<TvShowResponse>
 
 }

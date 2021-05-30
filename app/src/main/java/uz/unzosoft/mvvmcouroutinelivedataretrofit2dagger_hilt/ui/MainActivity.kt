@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupRv() {
         adapter = TvShowAdapter()
         binding.rv.adapter = adapter
+        binding.rv2.adapter = adapter
         binding.rv.setHasFixedSize(true)
         viewModel.responseTvShow.observe(this, { listTvShows ->
             adapter.tvShowItem = listTvShows
